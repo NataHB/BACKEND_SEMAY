@@ -4,6 +4,7 @@ import ENVIROMENT from "./enviroment.js";
 //Nos permite crear un pool de conexiones
 const pool = mysql.createPool({
     host: ENVIROMENT.MYSQL.HOST,
+    port: 3306,
     user: ENVIROMENT.MYSQL.USER,
     password: ENVIROMENT.MYSQL.PASSWORD,
     database: ENVIROMENT.MYSQL.DATABASE
